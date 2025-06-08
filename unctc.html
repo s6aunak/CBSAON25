@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="style1.css">
+      <style>
+         .header {
+            animation-delay: 1.8s;
+         }
+      
+         .about {
+            background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(assets/bg.jpeg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10rem;
+            padding-bottom: 3rem;
+         }
+      
+         .about img {
+            border-radius: 50%;
+            height: 15rem;
+            width: 15rem;
+            margin-bottom: 3rem;
+            object-fit: cover;
+         }
+      
+         .about h1 {
+            color: #D4AF37;
+            font-family: teko;
+            font-size: 4rem;
+            text-align: center;
+            margin: 0 1rem;
+         }
+      
+         .about h2 {
+            color: #fff;
+            font-family: teko;
+            font-size: 2rem;
+            text-align: center;
+            margin: 2rem 1rem;
+         }
+      
+         .about p {
+            margin-top: 2rem;
+            width: 60vw;
+            color: white;
+            font-family: nexa;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+         }
+      
+         @media screen and (max-width: 1150px) {
+            .about p {
+               width: 80vw;
+               font-size: 1rem;
+               text-align: center;
+               margin-top: 1.5rem;
+            }
+         }
+      
+         @media screen and (max-width: 768px) {
+            .about img {
+               height: 10rem;
+               width: 10rem;
+            }
+      
+            .about h1 {
+               font-size: 2.5rem;
+            }
+      
+            .about h2 {
+               font-size: 1.5rem;
+               margin-bottom: 1.5rem;
+            }
+      
+            .about p {
+               font-size: 0.9rem;
+               line-height: 1.5rem;
+               width: 90vw;
+            }
+         }
+      
+         @media screen and (max-width: 480px) {
+            .about h1 {
+               font-size: 2rem;
+            }
+      
+            .about h2 {
+               font-size: 1.2rem;
+            }
+      
+            .about p {
+               font-size: 0.85rem;
+               width: 95vw;
+               text-align: justify;
+            }
+         }
+      </style>
+      <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+        
+
+        .secretariat{
+            min-height: 100dvh;
+            width: 100dvw;
+            background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(assets/bg.jpeg);
+            background-size: cover;
+            background-position: center;
+            padding-top: 3rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-attachment: fixed;
+            padding-bottom: 4rem;
+        }
+
+        .secretariat h1{
+            padding-bottom: 3rem;
+            padding-top: 2rem;
+            color: #D4AF37;
+            font-family: akira;
+            font-size: 2.5rem;
+            
+        }
+
+        .secretariat #title2{
+            padding-bottom: 3rem;
+            padding-top: 11rem;
+            color: rgb(7, 133, 236);
+            text-align: center;
+        }
+
+        .secretariat .unga #title3{
+            padding-bottom: 3rem;
+            padding-top: 11rem;
+            color: #D4AF37;
+            text-align: center;
+        }
+
+        .secretariat-cards{
+            min-height: 100%;
+            width: 100%;
+            background: transparent;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            position: relative;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            background-size: cover;
+            width: 20dvw;
+            box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            margin:  3rem 1rem 0 1rem;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 50dvh;
+        }
+
+        .card2{
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            background-size: cover;
+            width: 18dvw;
+        }
+
+        .card-image{
+            width: 65%;
+        }
+
+        .secretariat .card-image img {
+            width: 100%;
+            transform: scale(.9);
+            border-radius: 50%;
+            background: url(students/Students/nobg/paper.jpeg);
+            border: 3px solid white ;
+        }
+
+        .card2 .card-image img{
+            width: 100%;
+            transform: scale(.9);
+            border-radius: 50%;
+            background: url(assets/blue.jpg);
+            border: 3px solid white ;
+        }
+
+        .card3 .card-image img{
+            width: 100%;
+            transform: scale(.9);
+            border-radius: 50%;
+            background: url(assets/gold.jpg);
+            border: 3px solid white ;
+        }
+
+        p {
+            color: white;
+            font-size: .9rem;
+            font-family: sans-serif;
+        }
+
+        .name {
+            margin-top: 1.5rem;
+            font-size: .8rem;
+            color: #fff;
+            font-weight: bold;
+            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+            font-family: coco;
+        }
+
+        .socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            margin: 12px 8px;
+            width: 44px;
+            height: 44px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: opacity 0.4s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        button i {
+            color: #fff;
+            font-size: 1.4em;
+        }
+
+        /* Social media colors */
+        button.more {
+            background-color: #24292e;
+        } 
+
+        button.insta {
+            background: url(textures/insta_gradient.jpg);
+        }
+
+        .role{
+        font-family: coco;
+        }
+
+        .card3{
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            background-size: cover;
+            width: 18dvw;
+        }
+
+        .card4{
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            background-size: cover;
+            width: 18dvw;
+
+        }
+
+        .card4 .card-image img{
+            width: 100%;
+            transform: scale(.9);
+            border-radius: 50%;
+            background: url(assets/green2.jpg);
+            border: 3px solid white ;
+        }
+
+        #title4{
+            color: rgb(7, 184, 7);
+            padding-top: 11rem;
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+
+        .unsc{
+            /* background-color: #052069; */
+            height: 10%;
+        }
+        
+        .unga svg{
+            bottom: 5rem;
+        }
+
+        .arab{
+            /* background-color: rgb(5, 65, 5); */
+            width: 100%;
+
+        }
+
+
+
+        @keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+        @media screen and (max-width:1150px) {
+            .secretariat{
+                padding-top: 4rem;
+            }
+
+            .card {
+            width: 80dvw;
+            }   
+
+            #title3 {
+            padding-top: 4rem;
+            text-align: center;
+            }
+
+        .secretariat h1{
+            font-size: 1.7rem;
+            padding-top: 2rem;
+            padding-bottom: 0;
+            }
+
+
+        .secretariat #title2 {
+            padding-top: 4rem;
+            font-size: 1.7rem;
+            text-align: center;
+            padding-bottom: 0;
+        }
+
+        .secretariat .unga #title3{
+            padding-top: 4rem;
+            text-align: center;
+            padding-bottom: 0;
+        }
+        
+        #title4{
+            padding-top: 4rem;
+            padding-bottom: 0rem;
+        }
+        }
+        
+
+        /*POPUP*/
+        .popup .overlay {
+            height: 100vh;
+            width: 100dvw;
+            background: rgba(0,0,0,0.7);
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            display: none;
+        }
+
+        .popup.open {
+            opacity: 1;
+            z-index: 1000;
+        }
+
+        .popup .content {
+            margin-top: 1rem;
+            border-radius: 50px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: #101010;
+            width: 70dvw;
+            z-index: 2000;
+            padding: 1rem;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .popup .content h2 {
+            color: white;
+            font-family: coco;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .popup .content p {
+            text-align: justify;
+            padding-top: 2rem;
+            padding: 2rem 1rem;
+            color: white;
+            font-size: 1rem;
+            font-family: rubik;
+        }
+
+        .popup .close-btn {
+            position: absolute;
+            right: 20px;
+            top: 0px;
+            width: 30px;
+            height: 30px;
+            background: none;
+            color: white;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .popup.active .overlay{
+            display: block;
+        }
+
+        .popup.active .content{
+            transition: all 300ms ease-in-out;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .popup .content img{
+            width: 6rem;
+            padding-bottom: 1rem;
+        }
+
+        @media screen and (max-width:1150px) {
+            .popup .content {
+            width: 90dvw;
+            margin-top: 2rem;
+            overflow: hidden;
+            overflow-y: scroll;
+            }
+
+        .popup .content h2 {
+            font-size: 1.2rem;
+            }
+
+            #title3 {
+            padding-top: 4rem;
+            text-align: center;
+        }
+
+        .popup .content p {
+            max-height: 70vh;
+            padding: 1rem .5rem;
+            color: white;
+            font-size: 1rem;
+            font-family: rubik;
+            }
+
+        .popup .content img{
+            width: 5rem;
+            padding-bottom: .8rem;
+            }
+        }
+
+
+
+</style>
+      
+
+      <title>UNCTC</title>
+      <link rel="icon" href="logo.png" type="image/png">
+   </head>
+   <body>
+      <div id="load"></div>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+           
+            <a href="#" class="nav_title"><div class="nav__logo" src=""></div></a>
+            <div class="countdown">00 : 00 : 00 : 00</div>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">
+                        <i class="ri-home-4-fill"></i>
+                        <span>Home</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="about.html" class="nav__link">
+                        <i class="ri-graduation-cap-fill"></i>
+                        <span>About</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="sec.html" class="nav__link">
+                        <i class="ri-verified-badge-fill"></i>
+                        <span>Secretariat</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="resources.html" class="nav__link">
+                        <i class="ri-git-repository-fill"></i>
+                        <span>Resources</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="committee.html" class="nav__link">
+                        <i class="ri-presentation-fill"></i>
+                        <span>Committees</span>
+                     </a>
+                  </li>
+
+                  <!-- <li class="nav__item">
+                     <a href="upload.html" class="nav__link">
+                        <i class="ri-file-add-fill"></i>
+                        <span>Upload</span>
+                     </a>
+                  </li> -->
+
+                  <li class="nav__item">
+                    <a href="publications.html" class="nav__link">
+                       <i class="ri-article-fill"></i>
+                       <span>Publications</span>
+                    </a>
+                 </li>
+
+                  <li class="nav__item">
+                     <a href="support.html" class="nav__link">
+                        <i class="ri-customer-service-fill"></i>
+                        <span>Support</span>
+                     </a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+     
+    <div class="about">
+        <img src="logos/unctc-rb.png" alt="">
+        <h1><b>United Nations Counter-Terrorism Committee (UNCTC)</b></h1>
+         <h2><i>“Technology is the new battleground where geopolitics and security converge.”</i></h2>
+         <p><br>
+
+         <b>AGENDA:</b> Combating the Use of Emerging Technologies by Terrorist Organizations<br><br>
+
+         The accelerating convergence of technology and geopolitics has redrawn the frontlines of counter-terrorism. Terrorist organizations are rapidly leveraging artificial intelligence, blockchain, drones, and encrypted platforms to recruit, radicalize, and finance operations across borders with unprecedented speed and stealth.<br><br>
+
+         In response, the UN Security Council's Counter-Terrorism Committee (CTC) adopted new guiding principles in 2025, focusing on the prevention, detection, and disruption of terrorist exploitation of emerging technologies—particularly virtual assets and AI-driven threats.<br><br>
+
+         International efforts now include coordinated policy dialogues, such as the December 2024 Rome Summit on AI and terrorism, along with joint initiatives with the OSCE aimed at strengthening legislative frameworks and enhancing digital literacy—especially among youth, who are increasingly targeted by online extremist propaganda.<br><br>
+
+         Recent developments underscore the urgency of global action: the CTC's multi-stakeholder approach has brought together over 120 parliamentarians and 80 experts to harmonize strategies, while the expansion of the OSCE's parliamentary coordination mechanism from 9 to 17 assemblies marks a new era of collective vigilance.<br><br>
+
+         Educational campaigns and policy reforms are being prioritized to build societal resilience, combat online disinformation, and foster responsible innovation—without compromising human rights.<br><br>
+
+         The UNCTC session at the Assembly of Nations 2025 stands as a dynamic forum where delegates must craft forward-looking solutions to confront the rapidly evolving nexus of technology and terrorism—striking a balance between security imperatives and digital freedoms.<br><br>
+
+         <b>**Double delegation committee with a cap of maximum 25 delegations.**</b>
+
+         </p>
+
+        
+    </div>
+
+    <div class="secretariat">
+       <!--===========================================================UNCTC==============================================================================================-->
+ <div class="arab">
+    <h1 id="title4">UNCTC</h1>
+    <div class="secretariat-cards">
+    
+    <!--=============== UNCTC 1 ===============-->
+<div class="card card4">
+  <div class="card-image">
+    <img src="pics/parthiv.jpg" alt="Profile image">
+  </div>
+  <p class="name">Parthiv Mukherjee</p>
+  <p class="role">Chairperson</p>
+  <div class="socials">
+    <button class="more open-btn" id="oi1" onclick="togglePopup18()">
+      <i class="ri-information-line"></i>
+    </button>
+  </div>
+</div>
+
+<!--=============== New Popup ===============-->
+<div class="popup" id="popup-18">
+  <div class="overlay" onclick="togglePopup18()"></div>
+  <div class="content">
+    <h2>Prathir Mukherjee</h2>
+    <p>Parthiv, a seasoned public speaker and strategist, currently works as a consultant in Bangalore, bringing his sharp analytical and negotiation skills to the corporate forefront. An alumnus of Scottish Church College with a degree in Economics, he is also a proud graduate of Calcutta Boys' School, Class of 2021 — where his MUN journey began in the 9th grade. With over 8 years of experience and participation in 100+ public speaking competitions as both a delegate and a judge, Parthiv has made his mark across Model United Nations Conferences, parliamentary debates, and conventional debating platforms. He passionately believes that everyone has a debater within and actively encourages individuals to step out of their comfort zones and embrace the art of public speaking. Deeply invested in business and economic affairs, Parthiv aspires to revolutionize the corporate realm through strategic ideation, negotiation, and diplomacy. As he joins us at CBS AON 2025, he brings with him a legacy of eloquence, leadership, and inspiration.</p>
+    <button class="close-btn" id="cb1" onclick="togglePopup18()">&times;</button>
+  </div>
+</div>
+
+<!--=============== UNCTC 2 ===============-->
+<div class="card card4">
+  <div class="card-image">
+    <img src="pics/adrish.JPG" alt="PHOTO NOT GIVEN">
+  </div>
+  <p class="name">Adrish Hossain</p>
+  <p class="role">Vice Chairperson</p>
+  <div class="socials">
+    <button class="more open-btn" id="oi2" onclick="togglePopup19()">
+      <i class="ri-information-line"></i>
+    </button>
+  </div>
+</div>
+
+<!--=============== New Popup ===============-->
+<div class="popup" id="popup-19">
+  <div class="overlay" onclick="togglePopup19()"></div>
+  <div class="content">
+    <h2>Adrish Hossain</h2>
+    <p>Adrish Hossain, a Class 11 science student, is the Secretary-General of CBS AON’25 and Vice Chairperson of the United Nations Counter Terrorism Committee. Despite his modest 5'7" stature, his reputation in the MUN circuit is anything but small-marked by a relentless pursuit of the Best Delegate award and a national-level debating pedigree. Known for his sharp critiques, witty committee humor, and a legendary debut involving an “invasion” on Russia, Adrish stands out as a budding lawyer and orator. A devoted Bayern Munich fan, his passion for international relations and action-driven diplomacy fuels his commitment to elevate every conference he leads, inspiring both delegates and Secretariat alike.</p>
+    <button class="close-btn" id="cb2" onclick="togglePopup19()">&times;</button>
+  </div>
+</div>
+
+<!--=============== UNCTC 3 ===============-->
+<div class="card card4">
+  <div class="card-image">
+    <img src="pics/nikunj.jpg" alt="Profile image">
+  </div>
+  <p class="name">Nikunj Chirimar</p>
+  <p class="role">Director</p>
+  <div class="socials">
+    <button class="more open-btn" id="oi3" onclick="togglePopup20()">
+      <i class="ri-information-line"></i>
+    </button>
+  </div>
+</div>
+
+<!--=============== New Popup ===============-->
+<div class="popup" id="popup-20">
+  <div class="overlay" onclick="togglePopup20()"></div>
+  <div class="content">
+    <h2>Nikunj Chirimar</h2>
+    <p>Nikunj Chirimar, Director for the UNSC committee, is a dedicated young leader focused on detailed paperwork, in-depth research, and constructive debates. Observant and quick to learn, he guides delegates toward meaningful resolutions with a collaborative and methodical approach. His commitment to global issues and strong organizational skills greatly enhance committee effectiveness.</p>
+    <button class="close-btn" id="cb3" onclick="togglePopup20()">&times;</button>
+  </div>
+</div>
+
+<!--=============== UNCTC 4 ===============-->
+<div class="card card4">
+  <div class="card-image">
+    <img src="pics/fahim.JPG" alt="Profile image">
+  </div>
+  <p class="name">Chowdhury Fahim Ali</p>
+  <p class="role">Tech</p>
+  <div class="socials">
+    <button class="more open-btn" id="oi4" onclick="togglePopup21()">
+      <i class="ri-information-line"></i>
+    </button>
+  </div>
+</div>
+
+<!--=============== New Popup ===============-->
+<div class="popup" id="popup-21">
+  <div class="overlay" onclick="togglePopup21()"></div>
+  <div class="content">
+    <h2>Chowdhury Fahim Ali</h2>
+    <p>Fahim is one of the developers behind the AON 2025 website, collaborating with Shaunak to design and build a smooth, user-friendly experience for all participants. Beyond web development, he’s a passionate Formula 1 fan who never misses a race and a dedicated guitarist who finds rhythm both in music and in life. When he's not writing code or jamming on his guitar, you’ll likely find him playing Valorant, where his sharp reflexes and strategic plans shine through. With a blend of technical skill, creativity, and enthusiasm, Fahim brings energy and precision to every project he takes on.
+</p>
+    <button class="close-btn" id="cb4" onclick="togglePopup21()">&times;</button>
+  </div>
+</div>
+
+<!--=============== UNCTC 5 ===============-->
+<div class="card card4">
+  <div class="card-image">
+    <img src="pics/arya-sur.JPG" alt="PHOTO NOT GIVEN">
+  </div>
+  <p class="name">Arya Sur</p>
+  <p class="role">Rapporteur</p>
+  <div class="socials">
+    <button class="more open-btn" id="oi5" onclick="togglePopup22()">
+      <i class="ri-information-line"></i>
+    </button>
+  </div>
+</div>
+
+<!--=============== New Popup ===============-->
+<div class="popup" id="popup-22">
+  <div class="overlay" onclick="togglePopup22()"></div>
+  <div class="content">
+    <h2>Arya Sur</h2>
+    <p>Arya Sur is one who doesn’t just argue — he obliterates, with style, sarcasm, and sentences that could leave a UN diplomat rethinking their career. Standing at 6 feet, Arya’s presence is felt even before he speaks. 
+A master of the debating arena and MUN committees, Arya doesn’t just win arguments; he curates verbal takedowns.  Teachers call it intellect. His opponents call it a public relations disaster. When Arya's not verbally dismantling ideas, he can be found plugged into fusion music, challenging chess matches, or hunting down food with the passion of a Michelin guide. However Arya's isn’t all logic and eloquence — he’s also the guy you go to when your Wi-Fi fails, your script is a mess, or you just need to complain about how unfairly short the day feels. Dependable, generous, and sharp — it’s definitely an intimidating combination, especially when delivered with that dry, straight-faced humour .</p>
+    <button class="close-btn" id="cb5" onclick="togglePopup22()">&times;</button>
+  </div>
+</div>
+
+   </div>    
+   </div>  
+</div>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="script.js"></script>
+
+    
+   </body>
+</html>

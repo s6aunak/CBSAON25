@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="style1.css">
+      <style>
+         .header {
+            animation-delay: 1.8s;
+         }
+         .about {
+            background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(assets/bg.jpeg);
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 100dvh;
+            width: 100dvw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10rem;
+            padding-bottom: 3rem;
+         }
+
+         .about h1{
+            color: #D4AF37;
+            font-family: teko;
+            font-size: 4rem;
+         }
+
+         .about p{
+            margin-top: 3rem;
+            width: 60vw;
+            color: white;
+            font-family: nexa;
+            font-size: 1.2rem;
+            text-align: justify;
+         }
+
+         .about2{
+            padding-top: 2rem;
+         }
+
+         @media screen and (max-width: 1150px) {
+
+            .about h1{
+            font-size: 1.5rem;
+            }
+
+            .about p{
+            margin-top: 3rem;
+            width: 80vw;
+            font-size: 1rem;
+            text-align: justify;
+            }
+         }
+      </style>
+
+      <title>About CBS</title>
+      <link rel="icon" href="logo.png" type="image/png">
+   </head>
+   <body>
+      <div id="load"></div>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+           
+            <a href="#" class="nav_title"><div class="nav__logo" src=""></div></a>
+            <div class="countdown">00 : 00 : 00 : 00</div>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">
+                        <i class="ri-home-4-fill"></i>
+                        <span>Home</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="about.html" class="nav__link">
+                        <i class="ri-graduation-cap-fill"></i>
+                        <span>About</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="sec.html" class="nav__link">
+                        <i class="ri-verified-badge-fill"></i>
+                        <span>Secretariat</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="resources.html" class="nav__link">
+                        <i class="ri-git-repository-fill"></i>
+                        <span>Resources</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="committee.html" class="nav__link">
+                        <i class="ri-presentation-fill"></i>
+                        <span>Committees</span>
+                     </a>
+                  </li>
+
+                  <!-- <li class="nav__item">
+                     <a href="upload.html" class="nav__link">
+                        <i class="ri-file-add-fill"></i>
+                        <span>Upload</span>
+                     </a>
+                  </li> -->
+
+                  <li class="nav__item">
+                    <a href="publications.html" class="nav__link">
+                       <i class="ri-article-fill"></i>
+                       <span>Publications</span>
+                    </a>
+                 </li>
+
+                  <li class="nav__item">
+                     <a href="support.html" class="nav__link">
+                        <i class="ri-customer-service-fill"></i>
+                        <span>Support</span>
+                     </a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+     
+    <div class="about">
+      <h1>ABOUT CALCUTTA BOYS' SCHOOL</h1>
+      <p>“Dei Mundus Deo – The World of God, for God.”
+         <br><br>
+         Calcutta Boys' School is a proud Christian Minority institution, founded in 1877 by Bishop James M. Thoburn under the vision of the Methodist Episcopal Church. Operated under the authority of the Calcutta Boys' School Educational Society, it functions as a registered, non-profit charitable organization affiliated with the Bengal Regional Conference of the Methodist Church in India.<br><br>
+         Thanks to the generous patronage of Sir Robert Laidlaw, whose contributions laid the foundation of our iconic campus at 72 S.N. Banerjee Road, CBS has grown into a beacon of learning where tradition meets innovation.<br><br>
+         What began humbly-with just six students on the veranda of a parsonage - has evolved over nearly a century and a half into one of Kolkata's most respected educational institutions. In response to a growing vision and the need to serve more communities, CBS has expanded its footprint with additional campuses in Sonarpur, Beleghata, and Asansol.<br><br>
+         For 148 years, CBS has been guided by enduring values: love, sincerity, justice, equality, and liberty. With a steadfast commitment to holistic, quality education, the school is dedicated to nurturing intellectually curious, morally grounded, and socially responsible global citizens.
+         Rooted in discipline and driven by purpose, Calcutta Boys' School continues to uphold its mission-fostering academic excellence, character development, and ethical leadership in every student.<br><br>
+         From humble beginnings to a legacy of leadership-Calcutta Boys' School continues to inspire, uplift, and empower generations.
+         </p>
+    </div>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="script.js"></script>
+
+      
+   
+   </body>
+</html>
