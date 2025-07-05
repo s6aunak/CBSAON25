@@ -76,7 +76,7 @@ function tick() {
     // Set time on document
     document.querySelector(".countdown").innerText = time;
   } else {
-    document.querySelector(".countdown").textContent = "Now LIVE !";
+    document.querySelector(".countdown").textContent = "See You Next Time!";
   }
 }
 
