@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="style1.css">
+      <style>
+         .header {
+            animation-delay: 1.8s;
+         }
+      
+         .about {
+            background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(assets/bg.jpeg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10rem;
+            padding-bottom: 3rem;
+         }
+      
+         .about img {
+            border-radius: 50%;
+            height: 15rem;
+            width: 15rem;
+            margin-bottom: 3rem;
+            object-fit: cover;
+         }
+      
+         .about h1 {
+            color: #D4AF37;
+            font-family: teko;
+            font-size: 4rem;
+            text-align: center;
+            margin: 0 1rem;
+         }
+      
+         .about h2 {
+            color: #fff;
+            font-family: teko;
+            font-size: 2rem;
+            text-align: center;
+            margin: 2rem 1rem;
+         }
+      
+         .about p {
+            margin-top: 2rem;
+            width: 60vw;
+            color: white;
+            font-family: nexa;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+         }
+      
+         @media screen and (max-width: 1150px) {
+            .about p {
+               width: 80vw;
+               font-size: 1rem;
+               text-align: center;
+               margin-top: 1.5rem;
+            }
+         }
+      
+         @media screen and (max-width: 768px) {
+            .about img {
+               height: 10rem;
+               width: 10rem;
+            }
+      
+            .about h1 {
+               font-size: 2.5rem;
+            }
+      
+            .about h2 {
+               font-size: 1.5rem;
+               margin-bottom: 1.5rem;
+            }
+      
+            .about p {
+               font-size: 0.9rem;
+               line-height: 1.5rem;
+               width: 90vw;
+            }
+         }
+      
+         @media screen and (max-width: 480px) {
+            .about h1 {
+               font-size: 2rem;
+            }
+      
+            .about h2 {
+               font-size: 1.2rem;
+            }
+      
+            .about p {
+               font-size: 0.85rem;
+               width: 95vw;
+               text-align: justify;
+            }
+         }
+
+         
+      </style>
+      <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+        
+
+        .secretariat{
+            min-height: 100dvh;
+            width: 100dvw;
+            background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(assets/bg.jpeg);
+            background-size: cover;
+            background-position: center;
+            padding-top: 3rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-attachment: fixed;
+            padding-bottom: 4rem;
+        }
+
+        .secretariat h1{
+            padding-bottom: 3rem;
+            padding-top: 2rem;
+            color: #D4AF37;
+            font-family: akira;
+            font-size: 2.5rem;
+            
+        }
+
+        .secretariat #title2{
+            padding-bottom: 3rem;
+            padding-top: 11rem;
+            color: #D4AF37;
+            text-align: center;
+        }
+
+        .secretariat .unga #title3{
+            padding-bottom: 3rem;
+            padding-top: 11rem;
+            color: red;
+            text-align: center;
+        }
+
+        .secretariat-cards{
+            min-height: 100%;
+            width: 100%;
+            background: transparent;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            position: relative;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            background-size: cover;
+            width: 20dvw;
+            box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            margin:  3rem 1rem 0 1rem;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 50dvh;
+        }
+
+        .card2{
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            background-size: cover;
+            width: 18dvw;
+        }
+
+        .card-image{
+            width: 65%;
+        }
+
+        .secretariat .card-image img {
+            width: 100%;
+            transform: scale(.9);
+            border-radius: 50%;
+            background: url(students/Students/nobg/paper.jpeg);
+            border: 3px solid white ;
+        }
+
+        .card2 .card-image img{
+            width: 100%;
+            transform: scale(.9);
+            border-radius: 50%;
+            background: url(assets/blue.jpg);
+            border: 3px solid white ;
+        }
+
+        .card3 .card-image img{
+            width: 100%;
+            transform: scale(.9);
+            border-radius: 50%;
+            background: url(assets/gold.jpg);
+            border: 3px solid white ;
+        }
+
+        p {
+            color: white;
+            font-size: .9rem;
+            font-family: sans-serif;
+        }
+
+        .name {
+            margin-top: 1.5rem;
+            font-size: .8rem;
+            color: #fff;
+            font-weight: bold;
+            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+            font-family: coco;
+        }
+
+        .socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            margin: 12px 8px;
+            width: 44px;
+            height: 44px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: opacity 0.4s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        button i {
+            color: #fff;
+            font-size: 1.4em;
+        }
+
+        /* Social media colors */
+        button.more {
+            background-color: #24292e;
+        } 
+
+        button.insta {
+            background: url(textures/insta_gradient.jpg);
+        }
+
+        .role{
+        font-family: coco;
+        }
+
+        .card3{
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            background-size: cover;
+            width: 18dvw;
+        }
+
+        .card4{
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            background-size: cover;
+            width: 18dvw;
+
+        }
+
+        .card4 .card-image img{
+            width: 100%;
+            transform: scale(.9);
+            border-radius: 50%;
+            background: url(assets/green2.jpg);
+            border: 3px solid white ;
+        }
+
+        #title4{
+            color: rgb(7, 184, 7);
+            padding-top: 11rem;
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+
+        .unsc{
+            /* background-color: #052069; */
+            height: 10%;
+        }
+        
+        .unga svg{
+            bottom: 5rem;
+        }
+
+        .arab{
+            /* background-color: rgb(5, 65, 5); */
+            width: 100%;
+
+        }
+
+
+
+        @keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+        @media screen and (max-width:1150px) {
+            .secretariat{
+                padding-top: 4rem;
+            }
+
+            .card {
+            width: 80dvw;
+            }   
+
+            #title3 {
+            padding-top: 4rem;
+            text-align: center;
+            }
+
+        .secretariat h1{
+            font-size: 1.7rem;
+            padding-top: 2rem;
+            padding-bottom: 0;
+            }
+
+
+        .secretariat #title2 {
+            padding-top: 4rem;
+            font-size: 1.7rem;
+            text-align: center;
+            padding-bottom: 0;
+        }
+
+        .secretariat .unga #title3{
+            padding-top: 4rem;
+            text-align: center;
+            padding-bottom: 0;
+        }
+        
+        #title4{
+            padding-top: 4rem;
+            padding-bottom: 0rem;
+        }
+        }
+        
+
+        /*POPUP*/
+        .popup .overlay {
+            height: 100vh;
+            width: 100dvw;
+            background: rgba(0,0,0,0.7);
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            display: none;
+        }
+
+        .popup.open {
+            opacity: 1;
+            z-index: 1000;
+        }
+
+        .popup .content {
+            margin-top: 1rem;
+            border-radius: 50px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: #101010;
+            width: 70dvw;
+            z-index: 2000;
+            padding: 1rem;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .popup .content h2 {
+            color: white;
+            font-family: coco;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .popup .content p {
+            text-align: justify;
+            padding-top: 2rem;
+            padding: 2rem 1rem;
+            color: white;
+            font-size: 1rem;
+            font-family: rubik;
+        }
+
+        .popup .close-btn {
+            position: absolute;
+            right: 20px;
+            top: 0px;
+            width: 30px;
+            height: 30px;
+            background: none;
+            color: white;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .popup.active .overlay{
+            display: block;
+        }
+
+        .popup.active .content{
+            transition: all 300ms ease-in-out;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .popup .content img{
+            width: 6rem;
+            padding-bottom: 1rem;
+        }
+
+        @media screen and (max-width:1150px) {
+            .popup .content {
+            width: 90dvw;
+            margin-top: 2rem;
+            overflow: hidden;
+            overflow-y: scroll;
+            }
+
+        .popup .content h2 {
+            font-size: 1.2rem;
+            }
+
+            #title3 {
+            padding-top: 4rem;
+            text-align: center;
+        }
+
+        .popup .content p {
+            max-height: 70vh;
+            padding: 1rem .5rem;
+            color: white;
+            font-size: 1rem;
+            font-family: rubik;
+            }
+
+        .popup .content img{
+            width: 5rem;
+            padding-bottom: .8rem;
+            }
+        }
+
+
+
+</style>
+      
+
+      <title>UNSC</title>
+      <link rel="icon" href="logo.png" type="image/png">
+   </head>
+   <body>
+     <div id="load"></div>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+           
+            <a href="#" class="nav_title"><div class="nav__logo" src=""></div></a>
+            <div class="countdown">00 : 00 : 00 : 00</div>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">
+                        <i class="ri-home-4-fill"></i>
+                        <span>Home</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="about.html" class="nav__link">
+                        <i class="ri-graduation-cap-fill"></i>
+                        <span>About</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="sec.html" class="nav__link">
+                        <i class="ri-verified-badge-fill"></i>
+                        <span>Secretariat</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="resources.html" class="nav__link">
+                        <i class="ri-git-repository-fill"></i>
+                        <span>Resources</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="committee.html" class="nav__link">
+                        <i class="ri-presentation-fill"></i>
+                        <span>Committees</span>
+                     </a>
+                  </li>
+
+                  <!-- <li class="nav__item">
+                     <a href="upload.html" class="nav__link">
+                        <i class="ri-file-add-fill"></i>
+                        <span>Upload</span>
+                     </a>
+                  </li> -->
+
+                  <li class="nav__item">
+                    <a href="publications.html" class="nav__link">
+                       <i class="ri-article-fill"></i>
+                       <span>Publications</span>
+                    </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="support.html" class="nav__link">
+                        <i class="ri-customer-service-fill"></i>
+                        <span>Support</span>
+                     </a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+     
+    <div class="about">
+        <img src="logos/unsc-rb.png" alt="">
+        <h1><b>United Nations Security Council (UNSC)</b></h1>
+        <h2><i>“To deny people their human rights is to challenge their very humanity.”<br>
+        – Nelson Mandela</i></h2>
+        <p><br>
+        
+        <b>AGENDA:</b> The situation in the Middle East: Special focus on escalation of hostilities in the Israel-Palestine conflict<br><br>
+        
+        The Israel-Palestine conflict has reached a catastrophic juncture. Since October 2023, over 52,000 Palestinians have been killed and 118,000 injured in Gaza, with women and children accounting for 70% of the casualties. Following the collapse of the March 2025 ceasefire, Israel reinstated a severe blockade—cutting off access to food, water, and humanitarian aid—pushing 2.1 million people to the brink of starvation and disease.<br><br>
+        
+        UN experts have warned that the deliberate deprivation of essential resources and widespread destruction of infrastructure may constitute acts of genocide. They are urging the international community to move beyond rhetoric and take enforceable action to end the carnage and hold perpetrators accountable. In a historic move, the International Criminal Court has issued arrest warrants for leaders of both Israel and Hamas, citing alleged war crimes and crimes against humanity—signaling a new era of international legal scrutiny.<br><br>
+        
+        Humanitarian organizations are facing unprecedented challenges. Aid convoys have been blocked or targeted, critical infrastructure lies in ruins, and more than 660,000 children are out of school, enduring malnutrition, trauma, and disease. The United Nations Security Council's agenda is shaped by these grim realities and by urgent appeals from UN agencies and human rights groups.<br><br>
+        
+        Delegates must confront the immediate need for a ceasefire, the establishment of humanitarian corridors, and mechanisms for accountability. At the same time, they must grapple with long-term questions of reconstruction, justice, and the viability of a two-state solution. The Assembly of Nations 2025 offers a crucial platform for decisive diplomatic action—echoing the world's call to end the suffering and forge a just path forward for all affected communities.<br><br>
+        
+        <b>**Single delegation committee with a cap of maximum 25 delegates.**</b>
+        
+        </p>
+     </div>
+
+
+     <div class="secretariat">
+     <div class="unsc">
+    <h1 id="title2">UNITED NATIONS SECURITY COUNCIL</h1>
+    <div class="secretariat-cards">
+  
+      <!--=============== UNSC 1 ===============-->
+<div class="card card2">
+    <div class="card-image">
+      <img src="pics/souma.jpg" alt="Profile image">
+    </div>
+    <p class="name">Soumyajyoti Sarkar</p>
+    <p class="role">Chairperson</p>
+    <div class="socials">
+      <button class="more open-btn" id="oi1" onclick="togglePopup8()">
+        <i class="ri-information-line"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!--=============== New Popup ===============-->
+  <div class="popup" id="popup-8">
+    <div class="overlay" onclick="togglePopup8()"></div>
+    <div class="content">
+      <h2>Soumajyoti Sarkar</h2>
+      <p>Soumajyoti Sarkar, an alumnus of Indian Maritime University, Chennai and Calcutta Boys' School (ISC 2016), is a dedicated marine engineer currently working at sea. Beyond his maritime career, he is deeply passionate about public speaking, debates, and Model United Nations, a journey he began in 2015 as part of the CBS delegation. With a decade of experience in the circuit, Soumajyoti remains committed to nurturing new talent and giving back to the community that shaped him. Returning as a chairperson for the diplomatic conference, he strives to inspire and empower the next generation of changemakers.</p>
+      <button class="close-btn" id="cb1" onclick="togglePopup8()">&times;</button>
+    </div>
+  </div>
+  
+  <!--=============== UNSC 2 ===============-->
+  <div class="card card2">
+    <div class="card-image">
+      <img src="pics/neil.jpg" alt="PHOTO NOT GIVEN">
+    </div>
+    <p class="name">Neil Joseph Chakraborty</p>
+    <p class="role">Vice Chairperson</p>
+    <div class="socials">
+      <button class="more open-btn" id="oi2" onclick="togglePopup9()">
+        <i class="ri-information-line"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!--=============== New Popup ===============-->
+  <div class="popup" id="popup-9">
+    <div class="overlay" onclick="togglePopup9()"></div>
+    <div class="content">
+      <h2>Neil Joseph Chakraborty</h2>
+      <p>Neil is a Calcutta Boys' School alumni of ISC batch 2025 and now dedicated first-year law student with over two years of active experience in the Model United Nations circuit. Known for his sharp analytical skills and persuasive diplomacy, he has participated in numerous MUN and moot court conferences, consistently demonstrating strong leadership and a deep understanding of international affairs. Neil brings both professionalism and passion to committee debates, often taking on challenging roles with confidence. His extensive MUN background has honed his public speaking, research, and negotiation abilities, making him a valuable asset to any conference. Committed to excellence, Neil continues to grow as a delegate and mentor in the MUN community.</p>
+      <button class="close-btn" id="cb2" onclick="togglePopup9()">&times;</button>
+    </div>
+  </div>
+  
+  <!--=============== UNSC 3 ===============-->
+  <div class="card card2">
+    <div class="card-image">
+      <img src="pics/arman.JPG" alt="Profile image">
+    </div>
+    <p class="name">Arman Ali Sardar</p>
+    <p class="role">Director</p>
+    <div class="socials">
+      <button class="more open-btn" id="oi3" onclick="togglePopup10()">
+        <i class="ri-information-line"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!--=============== New Popup ===============-->
+  <div class="popup" id="popup-10">
+    <div class="overlay" onclick="togglePopup10()"></div>
+    <div class="content">
+      <h2>Arman Ali Sardar </h2>
+      <p>Meet Arman, the no-nonsense Director of the United Nations Security Council, known for his fierce debates and bold leadership. From defending Palestine to attacking Pakistan on Kashmir, he’s tackled global issues with passion. A Liverpool fan and Karan Aujla buff, Arman is a driven science student aiming to be a doctor. Described as a “status symbol of leadership,” by his teacher, he’s pragmatic and sharp minded. With a sharp tongue will and a strong will, he makes his presence felt in every room he enters.</p>
+      <button class="close-btn" id="cb3" onclick="togglePopup10()">&times;</button>
+    </div>
+  </div>
+  
+  <!--=============== UNSC 4 ===============-->
+  <div class="card card2">
+    <div class="card-image">
+      <img src="pics/shaunak.JPG" alt="Profile image">
+    </div>
+    <p class="name">Shaunak Bagh</p>
+    <p class="role">Tech</p>
+    <div class="socials">
+      <button class="more open-btn" id="oi4" onclick="togglePopup11()">
+        <i class="ri-information-line"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!--=============== New Popup ===============-->
+  <div class="popup" id="popup-11">
+    <div class="overlay" onclick="togglePopup11()"></div>
+    <div class="content">
+      <h2>Shaunak Bagh</h2>
+      <p>Shaunak, your friendly neighbourhood techie, is one of the key developers behind the AON 2025 website, working alongside Fahim to create a seamless and engaging platform for the conference. A talented bassist with a deep love for music, he brings creativity and rhythm not just to his instrument, but also to his code. Shaunak is also an avid Valorant player and a passionate FC Barcelona fan, always ready to dive into competitive matches or cheer on his team. With a strong mix of technical skill, artistic flair, and team spirit, Shaunak plays a vital role in both the digital and cultural sides of AON 2025.
+</p>
+      <button class="close-btn" id="cb4" onclick="togglePopup11()">&times;</button>
+    </div>
+  </div>
+  
+  <!--=============== UNSC 5 ===============-->
+  <div class="card card2">
+    <div class="card-image">
+      <img src="pics/samyantak.jpg" alt="PHOTO NOT GIVEN">
+    </div>
+    <p class="name">Samyantak Bhattacharyya</p>
+    <p class="role">Rapporteur</p>
+    <div class="socials">
+      <button class="more open-btn" id="oi5" onclick="togglePopup12()">
+        <i class="ri-information-line"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!--=============== New Popup ===============-->
+  <div class="popup" id="popup-12">
+    <div class="overlay" onclick="togglePopup12()"></div>
+    <div class="content">
+      <h2>Samyantak Bhattacharyya</h2>
+      <p>Samyantak Bhattacharyya, Rapporteur for the UNSC committee, is a promising talent in the Kolkata MUN circuit. Known for his passionate debating, thorough paperwork, and patient approach, he excels in research and geopolitical journalism. His ability to clearly document proceedings and support balanced discussions makes him an ideal rapporteur, ensuring every delegate’s voice is accurately recorded.</p>
+      <button class="close-btn" id="cb5" onclick="togglePopup12()">&times;</button>
+    </div>
+  </div>
+  
+  
+  
+    </div>
+  </div>
+  </div>
+
+        
+
+
+
+      <!--=============== MAIN JS ===============-->
+      <script src="script.js"></script>
+
+
+   </body>
+</html>
