@@ -12,5 +12,5 @@ The website provides detailed information about all participating committees, in
 
 ## 👨‍💻 Developers
 
-- [@Fahim2k10](https://github.com/Fahim2k10)  
-- [@IntensePants](https://github.com/IntensePants)
+- [@fahim2k10](https://github.com/Fahim2k10)  
+- [@s6aunak]([https://github.com/IntensePants](https://github.com/s6aunak))
